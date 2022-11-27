@@ -1,0 +1,82 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #001338;
+}
+.container{
+    background-color: #001338;
+    height: 100vh;
+    text-align: center;
+}
+
+.top img{
+    width: 20rem;
+}
+
+.middle {
+    margin:  2rem 0;
+    position: relative;
+}
+.middle p:first-child{
+    font-size: 3rem;
+    color: transparent;
+    -webkit-text-stroke: #fff 2px;
+    text-transform: uppercase;
+}
+.middle p:nth-child(2){
+    color: white;
+    font-size: 2rem;
+}
+
+.labo{
+    margin: 10rem 0 4rem 0;
+    position: relative;
+}
+.labo img{
+    width: 10rem;
+}
+
+.labo span{
+    position: absolute;
+    top: 0;
+    left: 48%;
+    animation: up 5s infinite;
+    content: "";
+    background-color: #f17e88;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+@keyframes up {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -100%;
+    }
+}
+.home{
+    position: absolute;
+    left: 70%;
+    top: 84%;
+}
+.home a{
+    color: black;
+    background-color: #f17e88;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    transition: .4s;
+}
+.home a:hover{
+    color: white;
+    background-color: black;
+    transition: .4s;
+}
+
